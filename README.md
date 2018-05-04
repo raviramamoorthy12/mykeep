@@ -1,7 +1,6 @@
 # MyKeepApplication
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
-It is developed for Cognizant FSD Program Angular First Assignment
 Before running the application start json server using json-server server/db.json command. Make sure you have installed json-server node package.
 
 ## Development server
