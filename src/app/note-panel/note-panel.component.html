@@ -1,0 +1,32 @@
+<div id="note-panel-flex-container" class="note-panel-flex-container">
+
+<mat-expansion-panel class="note-panel">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Take Note
+    </mat-panel-title>
+   <!-- <mat-panel-description>
+      Enter Note Title and Note Details below
+    </mat-panel-description> -->
+  </mat-expansion-panel-header>
+
+
+    <mat-form-field class="note-full-width">
+      <input (click)="titleOnClick()" matInput  [(ngModel)] = "note.title"  placeholder="Title">
+    </mat-form-field>
+
+    <mat-form-field class="note-full-width">
+      <textarea (click)="textOnClick()" [(ngModel)] = "note.text" matInput placeholder="Note Description"></textarea>
+    </mat-form-field>
+  <mat-error *ngIf="error">{{ errorMsg}}</mat-error>
+<div class="note-panel-flex-button">
+
+     <button (click)="takeNotes()" mat-button>Done</button>
+
+</div>
+
+
+
+</mat-expansion-panel>
+
+</div>

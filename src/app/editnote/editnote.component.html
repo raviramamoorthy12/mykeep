@@ -1,0 +1,16 @@
+<div id="note-card-flex-container" class="note-card-flex-container">
+
+  <mat-form-field class="note-full-width">
+    <input  value="{{data.title}}"  [(ngModel)]="data.title"   matInput  >
+  </mat-form-field>
+
+  <mat-form-field class="note-full-width" >
+    <textarea value="{{data.text}}" matInput [(ngModel)]="data.text"   ></textarea>
+  </mat-form-field>
+
+  <div mat-dialog-actions>
+
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+  </div>
+
+</div>

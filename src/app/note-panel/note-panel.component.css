@@ -1,0 +1,26 @@
+.note-panel-flex-container{
+  width: 100%;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+
+.note-panel{
+  max-width: 600px;
+}
+
+.note-panel-flex-button{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.note-full-width {
+  width: 100%;
+}

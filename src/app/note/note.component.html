@@ -1,0 +1,7 @@
+<div id="note-card-flex-container" class="note-card-flex-container">
+
+<mat-card   (dblclick) = onNoteDblClcik(note) *ngFor="let note of notes" class="note-card">
+  <mat-card-title>{{note.title}}</mat-card-title>
+  <mat-card-content>{{note.text}}</mat-card-content>
+</mat-card>
+</div>

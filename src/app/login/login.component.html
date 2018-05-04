@@ -1,0 +1,30 @@
+<div id="login-panel-flex-container" class="login-panel-flex-container">
+
+
+  <mat-card class="login-card">
+    <mat-card-title>My Keep Login</mat-card-title>
+
+    <mat-card-content>
+
+      <mat-form-field class="login-full-width">
+        <input  matInput  [(ngModel)] = "auth.username"  placeholder="User Name">
+      </mat-form-field>
+
+      <mat-form-field class="login-full-width">
+        <input matInput type="password" [(ngModel)] = "auth.password" placeholder="Password">
+
+      </mat-form-field>
+      <mat-error *ngIf="error">{{ errorMsg}}</mat-error>
+      <div class="login-panel-flex-button">
+
+        <button (click)="onSubmit()"  mat-button>Submit</button>
+
+      </div>
+
+    </mat-card-content>
+
+  </mat-card>
+
+
+
+</div>

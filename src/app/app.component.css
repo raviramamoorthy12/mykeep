@@ -1,0 +1,18 @@
+.main-flex-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-flex-header {
+  flex: 0 0 auto;
+
+}
+.main-flex-content{
+  flex: 1 1 auto;
+  position: relative;/* need this to position inner content */
+  overflow-y: auto;
+}
+.main-flex-footer {
+  flex: 0 0 auto;
+
+}
